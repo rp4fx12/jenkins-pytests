@@ -3,3 +3,8 @@ bin/
 lib/
 .Python
 include/
+
+# Python Files
+.cache
+**/__pycache__
+
