@@ -7,7 +7,7 @@ import pytest
 
 from click.testing import CliRunner
 
-from jenkins_pytests import jenkins_pytests
+#from jenkins_pytests import jenkins_pytests
 from jenkins_pytests import cli
 
 
@@ -36,3 +36,14 @@ def test_command_line_interface():
     help_result = runner.invoke(cli.main, ['--help'])
     assert help_result.exit_code == 0
     assert '--help  Show this message and exit.' in help_result.output
+
+
+def testOneEqualsOne():
+    assert 1 == 1
+
+def testAssertValInList():
+    l = list(range(0, 10))
+    assert 2 in l
+
+def testExpectedFailTest():
+    assert False == True
