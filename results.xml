@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="2" name="pytest" skips="0" tests="7" time="0.968"><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="23" name="test_content" time="0.8537256717681885"><system-err>/Users/rohan/anaconda/lib/python3.6/site-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I&apos;m using the best available HTML parser for this system (&quot;lxml&quot;). This usually isn&apos;t a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="3" name="pytest" skips="0" tests="8" time="2.425"><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="23" name="test_content" time="2.2518467903137207"><system-err>/Users/rohan/anaconda/lib/python3.6/site-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I&apos;m using the best available HTML parser for this system (&quot;lxml&quot;). This usually isn&apos;t a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
 
 The code that caused this warning is on line 6 of the file /Users/rohan/anaconda/bin/py.test. To get rid of this warning, change code that looks like this:
 
@@ -9,11 +9,15 @@ to this:
  BeautifulSoup(YOUR_MARKUP, &quot;lxml&quot;)
 
   markup_type=markup_type))
-</system-err></testcase><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="29" name="test_command_line_interface" time="0.0027112960815429688"></testcase><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="40" name="testOneEqualsOne" time="0.00035500526428222656"></testcase><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="43" name="testAssertValInList" time="0.0003323554992675781"></testcase><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="47" name="testExpectedFailTest" time="0.002377033233642578"><failure message="assert False == True">def testExpectedFailTest():
+</system-err></testcase><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="29" name="test_command_line_interface" time="0.0039882659912109375"></testcase><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="40" name="testOneEqualsOne" time="0.00035452842712402344"></testcase><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="43" name="testAssertValInList" time="0.00033855438232421875"></testcase><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="47" name="testExpectedFailTest" time="0.0037631988525390625"><failure message="assert False == True">def testExpectedFailTest():
 &gt;       assert False == True
 E       assert False == True
 
-tests/test_jenkins_pytests.py:49: AssertionError</failure></testcase><testcase classname="tests.test_random_tests" file="tests/test_random_tests.py" line="5" name="testValidTest" time="0.0004177093505859375"></testcase><testcase classname="tests.test_random_tests" file="tests/test_random_tests.py" line="8" name="testFailingTest" time="0.00039696693420410156"><failure message="assert False">def testFailingTest():
+tests/test_jenkins_pytests.py:49: AssertionError</failure></testcase><testcase classname="tests.test_jenkins_pytests" file="tests/test_jenkins_pytests.py" line="50" name="testRaisesError" time="0.0005502700805664062"><failure message="ValueError: Raising Value Error">def testRaisesError():
+&gt;       raise ValueError(&apos;Raising Value Error&apos;)
+E       ValueError: Raising Value Error
+
+tests/test_jenkins_pytests.py:52: ValueError</failure></testcase><testcase classname="tests.test_random_tests" file="tests/test_random_tests.py" line="5" name="testValidTest" time="0.0004124641418457031"></testcase><testcase classname="tests.test_random_tests" file="tests/test_random_tests.py" line="8" name="testFailingTest" time="0.0004661083221435547"><failure message="assert False">def testFailingTest():
 &gt;       assert False
 E       assert False
 

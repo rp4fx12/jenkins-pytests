@@ -8,3 +8,5 @@ include/
 .cache
 **/__pycache__
 
+# Vim
+**/**.swp
