@@ -47,3 +47,6 @@ def testAssertValInList():
 
 def testExpectedFailTest():
     assert False == True
+    
+def testRaisesError():
+    raise ValueError('Raising Value Error')
