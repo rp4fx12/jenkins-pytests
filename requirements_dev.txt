@@ -10,7 +10,7 @@ twine==1.12.1
 
 pytest==3.8.2
 pytest-runner==4.2
-arrow==0.12.1
+arrow==0.15.1
 beautifulsoup4==4.7.0
 binaryornot==0.4.4
 bs4==0.0.1
